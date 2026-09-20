@@ -1,10 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>NGP Music</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 25px;
+      background: #111116;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #9b8cff;
+    }
+
+    .menu {
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: 60px 25px;
+      text-align: center;
+      background: linear-gradient(135deg, #19152d, #0b0b0f);
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #9b8cff;
+    }
+
+    .hero p {
+      color: #bdbdc7;
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      background: #9b8cff;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+    }
+
+    .card {
+      min-width: 160px;
+      background: #17171e;
+      padding: 15px;
+      border-radius: 14px;
+    }
+
+    .cover {
+      height: 140px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #9b8cff, #5b4bb7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      color: #9999a5;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #777783;
+      background: #111116;
+      margin-top: 30px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to NGP Music</h1>
-  <p>Your music platform is coming soon.</p>
+
+  <header>
+    <div class="logo">NGP Music</div>
+    <div class="menu">☰</div>
+  </header>
+
+  <div class="hero">
+    <h1>Feel the <span>Music</span></h1>
+
+    <p>
+      Discover new music, support artists and enjoy your favorite songs
+      with NGP Music.
+    </p>
+
+    <a href="#" class="btn">Start Listening</a>
+  </div>
+
+  <section>
+    <h2>🔥 Trending Now</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="cover">🎵</div>
+        <h3>New Sounds</h3>
+        <p>NGP Music</p>
+      </div>
+
+      <div class="card">
+        <div class="cover">🎧</div>
+        <h3>Afrobeats</h3>
+        <p>Top Artists</p>
+      </div>
+
+      <div class="card">
+        <div class="cover">🎤</div>
+        <h3>Ghana Hits</h3>
+        <p>Popular Music</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>🎶 Explore Music</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="cover">▶️</div>
+        <h3>Latest Releases</h3>
+        <p>Listen to new songs</p>
+      </div>
+
+      <div class="card">
+        <div class="cover">⭐</div>
+        <h3>Top Artists</h3>
+        <p>Discover artists</p>
+      </div>
+
+      <div class="card">
+        <div class="cover">❤️</div>
+        <h3>Your Favorites</h3>
+        <p>Your music collection</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 NGP Music</p>
+    <p>Music • Artists • Community</p>
+  </footer>
+
 </body>
 </html>
